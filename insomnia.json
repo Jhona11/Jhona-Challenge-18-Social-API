@@ -1,0 +1,598 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-07-30T23:43:06.950Z",
+    "__export_source": "insomnia.desktop.app:v9.3.2",
+    "resources": [
+        {
+            "_id": "req_0761925bf9e147e89c883a2abee9caa4",
+            "parentId": "fld_df49949e7cb94e3cafc6f064a827214f",
+            "modified": 1722379408001,
+            "created": 1722377068572,
+            "url": "localhost:3001/api/users",
+            "name": "GET all users",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722379407970,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_df49949e7cb94e3cafc6f064a827214f",
+            "parentId": "wrk_95df527aec704bc4b4984249cbc84b15",
+            "modified": 1722379784155,
+            "created": 1722379398915,
+            "name": "Users",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1722379399115,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_95df527aec704bc4b4984249cbc84b15",
+            "parentId": null,
+            "modified": 1722376737990,
+            "created": 1722376737990,
+            "name": "Social Network API",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_c5ea98bf250e46c3b4da98ab5ce11f73",
+            "parentId": "fld_df49949e7cb94e3cafc6f064a827214f",
+            "modified": 1722382962528,
+            "created": 1722379453219,
+            "url": "localhost:3001/api/users/:id",
+            "name": "GET specific user",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722201359537.5,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "id",
+                    "value": ""
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e91403bb6cf14e54b2df836be540126f",
+            "parentId": "fld_df49949e7cb94e3cafc6f064a827214f",
+            "modified": 1722379588956,
+            "created": 1722379527159,
+            "url": "localhost:3001/api/users/",
+            "name": "POST new user",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\": \"Alice\",\n\t\"email\": \"example@hotmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722112335321.25,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_28a60252a5cd4253a77218941c38584c",
+            "parentId": "fld_df49949e7cb94e3cafc6f064a827214f",
+            "modified": 1722382965530,
+            "created": 1722379626923,
+            "url": "localhost:3001/api/users/:userId",
+            "name": "PUT user name and email",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\": \"New Alice\",\n\t\"email\": \"example2@hotmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722067823213.125,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "userId",
+                    "value": ""
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_79a0d81bb8814175a1648782b46831ae",
+            "parentId": "fld_df49949e7cb94e3cafc6f064a827214f",
+            "modified": 1722382967460,
+            "created": 1722379750359,
+            "url": "localhost:3001/api/users/:userId",
+            "name": "DELETE user",
+            "description": "",
+            "method": "DELETE",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\": \"New Alice\",\n\t\"email\": \"example2@hotmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722045567159.0625,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "userId",
+                    "value": ""
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5eb9ac78a5fc411ca02a7b1a84bf80f6",
+            "parentId": "fld_30402771129f4d4392cf235310d73707",
+            "modified": 1722382956247,
+            "created": 1722378632071,
+            "url": "http://localhost:3001/api/users/:userId/friends/:friendId",
+            "name": "GET add friend",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722379441221,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "userId",
+                    "value": ""
+                },
+                {
+                    "name": "friendId",
+                    "value": ""
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_30402771129f4d4392cf235310d73707",
+            "parentId": "wrk_95df527aec704bc4b4984249cbc84b15",
+            "modified": 1722379944964,
+            "created": 1722379412660,
+            "name": "Friends",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1722379399090,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_8faf270304f54ac9a75175d6f1f5e616",
+            "parentId": "fld_30402771129f4d4392cf235310d73707",
+            "modified": 1722382958934,
+            "created": 1722379847738,
+            "url": "http://localhost:3001/api/users/:userId/friends/:friendId",
+            "name": "DELETE friend",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722379424595.5,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "userId",
+                    "value": ""
+                },
+                {
+                    "name": "friendId",
+                    "value": ""
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e8267e581b804d68bb97754466bbddcf",
+            "parentId": "fld_2ca2f0df709e4311a36314b3308d4c2c",
+            "modified": 1722379977093,
+            "created": 1722379960994,
+            "url": "localhost: 3001/api/thoughts",
+            "name": "GET all thoughts",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722379965020,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_2ca2f0df709e4311a36314b3308d4c2c",
+            "parentId": "wrk_95df527aec704bc4b4984249cbc84b15",
+            "modified": 1722380443539,
+            "created": 1722379911571,
+            "name": "Thoughts",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1722379399083.75,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_6416702abaa743cd969aaa879c50f93f",
+            "parentId": "fld_2ca2f0df709e4311a36314b3308d4c2c",
+            "modified": 1722382937787,
+            "created": 1722379992817,
+            "url": "localhost: 3001/api/thoughts/:thoughtId",
+            "name": "GET specific thought",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722379703120.5,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "thoughtId",
+                    "value": ""
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5f21ed2e9c4d4f6c9ea57cad38348580",
+            "parentId": "fld_2ca2f0df709e4311a36314b3308d4c2c",
+            "modified": 1722380183158,
+            "created": 1722380015805,
+            "url": "localhost: 3001/api/thoughts/",
+            "name": "POST new thought",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"userId\": \"66a96619e8c33a2b8b4b726c\",\n\t\"thoughtText\": \"This is the first thought\",\n\t\"username\": \"Jhona\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722379572170.75,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_90b7817ffa1a4ee099d8da20102e3cea",
+            "parentId": "fld_2ca2f0df709e4311a36314b3308d4c2c",
+            "modified": 1722382942241,
+            "created": 1722380295960,
+            "url": "localhost: 3001/api/thoughts/:thoughtId",
+            "name": "PUT thought text",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"thoughtText\": \"This is the new first thought\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722379506695.875,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "thoughtId",
+                    "value": ""
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_9c6bd8cd52834735b9941641b23b54cd",
+            "parentId": "fld_2ca2f0df709e4311a36314b3308d4c2c",
+            "modified": 1722382944340,
+            "created": 1722380384101,
+            "url": "localhost:3001/api/thoughts/:thoughtId",
+            "name": "DELETE thought",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722379473958.4375,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "thoughtId",
+                    "value": ""
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_513133f863b54d13ab8a78de33d2beae",
+            "parentId": "fld_7f8f57d77e6545b39813a9852b614623",
+            "modified": 1722382947718,
+            "created": 1722380498053,
+            "url": "localhost:3001/api/thoughts/:thoughtId/reactions",
+            "name": "POST new reactions",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"reactionBody\": \"What a thought!\",\n\t\"username\": \"Alice\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722380501242,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "thoughtId",
+                    "value": ""
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_7f8f57d77e6545b39813a9852b614623",
+            "parentId": "wrk_95df527aec704bc4b4984249cbc84b15",
+            "modified": 1722380440782,
+            "created": 1722380436217,
+            "name": "Reactions",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1722379399077.5,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_308559762d9e4d81a96decea636273c2",
+            "parentId": "fld_7f8f57d77e6545b39813a9852b614623",
+            "modified": 1722382934335,
+            "created": 1722380650359,
+            "url": "localhost:3001/api/thoughts/:thoughtId/reactions/:reactionId",
+            "name": "DELETE reactions",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.2"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1722380233131,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "thoughtId",
+                    "value": ""
+                },
+                {
+                    "name": "reactionId",
+                    "value": ""
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_f234a3fba8f943559277cc0e133ab08eb33e8dbf",
+            "parentId": "wrk_95df527aec704bc4b4984249cbc84b15",
+            "modified": 1722376737991,
+            "created": 1722376737991,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1722376737991,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_f234a3fba8f943559277cc0e133ab08eb33e8dbf",
+            "parentId": "wrk_95df527aec704bc4b4984249cbc84b15",
+            "modified": 1722376737992,
+            "created": 1722376737992,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        }
+    ]
+}
