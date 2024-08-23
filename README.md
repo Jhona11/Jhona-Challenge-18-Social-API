@@ -3,8 +3,6 @@ Week-18 Challenge (MongoDB)
 
 ## Table of Contents
 - [Description](#description)
-- [Live-Screen-Recording-of-Application-Functionality](#live-screen-recording-of-application-functionality)
-- [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Features](#features)
 - [Usage-Information](#usage-information)
@@ -13,13 +11,9 @@ Week-18 Challenge (MongoDB)
 
 This application serves as the foundation for a full stack social network application utilizing MongoDB as the database, Express.js for routing, and the Mongoose ODM. It establishes the initial CRUD API routes, enabling user creation, search, update, and deletion. Users can also share thoughts, react to their friends' thoughts, create friend lists, and subsequently delete thoughts, reactions, friends, and their own user profile. While the application is still in its early stages, the integration of the MongoDB database and API middleware routing represents a pivotal initial step in exploring the capabilities of MongoDB and the Mongoose ODM.
 
-## Live Screen Recording of Application Functionality
-
-https://watch.screencastify.com/v/oTgcMowwqQKc3qcbdiWX
-
 ## Installation
 
-1. Clone the repo: `git clone git@github.com:Jhona11/Social-Network-API.git`
+1. Clone the repo: `git clone git@github.com:Jhona11/Jhona-Challenge-18-Social-API.git`
 
 2. Open in VS Code. If you do not have VS code you must install it.
 
