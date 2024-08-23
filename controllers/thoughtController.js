@@ -3,7 +3,7 @@ const { User, Thought } = require("../models");
 async function getThoughts(req, res) {
   Thought.find()
     .then(thought => {
-      return res.status(200).json(thoughts);
+      return res.status(200).json(thought);
     })
     .catch(err => {
       console.log(err);
